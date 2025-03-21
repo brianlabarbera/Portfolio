@@ -3,7 +3,7 @@ import React from 'react'
 const Home = () => {
 
 return (
-    <div className="h-screen w-full flex flex-col items-center justify-center bg-black text-white">
+    <div className="h-screen w-full flex flex-col items-center justify-center text-white">
       <h1 className="text-5xl font-bold">
       <span className="text-purple-400">SOFTWARE</span> DEVELOPER
       </h1>

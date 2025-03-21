@@ -1,19 +1,120 @@
 import React from 'react'
-import Home from "./components/Home";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { useEffect, useMemo, useState } from "react";
+import { loadSlim } from "@tsparticles/slim";
+import Home from "./pages/Home"
 
 const App = () => {
+
+const [init, setInit] = useState(false);
+useEffect(() => {
+  initParticlesEngine(async (engine) => {
+    await loadSlim(engine);
+  }).then(() => {
+    setInit(true);
+  });
+}, []);
+
+const particlesLoaded = (container) => {
+  console.log(container);
+};
+
+
+const options = useMemo(
+  () => ({
+    background: {
+      color: {
+        value: "#00000000",
+      },
+    },
+    fpsLimit: 120,
+    interactivity: {
+      events: {
+        onClick: {
+          enable: true,
+          mode: "repulse",
+        },
+        onHover: {
+          enable: true,
+          mode: 'grab',
+        },
+      },
+      modes: {
+        push: {
+          distance: 200,
+          duration: 15,
+        },
+        grab: {
+          distance: 150,
+        },
+      },
+    },
+    particles: {
+      color: {
+        value: "#FFFFFF",
+      },
+      links: {
+        color: "#FFFFFF",
+        distance: 150,
+        enable: true,
+        opacity: 0.3,
+        width: 1,
+      },
+      move: {
+        direction: "none",
+        enable: true,
+        outModes: {
+          default: "bounce",
+        },
+        random: true,
+        speed: 1,
+        straight: false,
+      },
+      number: {
+        density: {
+          enable: true,
+        },
+        value: 150,
+      },
+      opacity: {
+        value: 1.0,
+      },
+      shape: {
+        type: "circle",
+      },
+      size: {
+        value: { min: 1, max: 3 },
+      },
+    },
+    detectRetina: true,
+  }),
+  [],
+);
+
+
   return (
-    <div className="h-screen w-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory">
-      <section className="snap-start">
+
+    <div className="h-screen w-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory relative">
+
+      {init && (
+      <Particles
+      className="fixed top-0 left-0 w-full h-full pointer-events-none z-0"
+      id="tsparticles"
+      options={options}
+      particlesLoaded={particlesLoaded}
+      />
+    )}
+
+      <section className="snap-start relative z-10">
         <Home />
       </section>
-      <section className="h-screen w-full bg-gray-900 flex items-center justify-center text-white snap-start">
+      <section className="h-screen w-full flex items-center justify-center text-white snap-start relative z-10">
         <h1 className="text-4xl font-bold">About Me</h1>
       </section>
-      <section className="h-screen w-full bg-gray-800 flex items-center justify-center text-white snap-start">
+      <section className="h-screen w-full flex items-center justify-center text-white snap-start relative z-10">
         <h1 className="text-4xl font-bold">Projects</h1>
       </section>
-      <section className="h-screen w-full bg-gray-700 flex items-center justify-center text-white snap-start">
+      <section className="h-screen w-full flex items-center justify-center text-white snap-start relative z-10">
         <h1 className="text-4xl font-bold">Contact Me</h1>
       </section>
     </div>
