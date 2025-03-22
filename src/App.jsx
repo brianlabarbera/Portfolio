@@ -117,7 +117,7 @@ const options = useMemo(
       <section className="snap-start relative z-10">
         <Experience />
       </section>
-      <section className="h-screen w-full flex items-center justify-center text-white snap-start relative z-10">
+      <section className="snap-start relative z-10">
         <Projects />
       </section>
     </div>
