@@ -3,6 +3,9 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim";
 import Home from "./pages/Home"
+import About from "./pages/About"
+import Experience from "./pages/Experience"
+import Projects from "./pages/Projects"
 
 const App = () => {
 
@@ -108,14 +111,14 @@ const options = useMemo(
       <section className="snap-start relative z-10">
         <Home />
       </section>
-      <section className="h-screen w-full flex items-center justify-center text-white snap-start relative z-10">
-        <h1 className="text-4xl font-bold">About Me</h1>
+      <section className="snap-start relative z-10">
+        <About />
+      </section>
+      <section className="snap-start relative z-10">
+        <Experience />
       </section>
       <section className="h-screen w-full flex items-center justify-center text-white snap-start relative z-10">
-        <h1 className="text-4xl font-bold">Projects</h1>
-      </section>
-      <section className="h-screen w-full flex items-center justify-center text-white snap-start relative z-10">
-        <h1 className="text-4xl font-bold">Contact Me</h1>
+        <Projects />
       </section>
     </div>
   )
