@@ -1,11 +1,12 @@
 import React from 'react'
-import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { useEffect, useMemo, useState } from "react";
-import { loadSlim } from "@tsparticles/slim";
+import Particles, { initParticlesEngine } from "@tsparticles/react"
+import { useEffect, useMemo, useState } from "react"
+import { loadSlim } from "@tsparticles/slim"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Experience from "./pages/Experience"
 import Projects from "./pages/Projects"
+import Navbar from "./components/Navbar"
 
 const App = () => {
 
@@ -96,8 +97,10 @@ const options = useMemo(
 
 
   return (
-
+    
     <div className="h-screen w-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory relative">
+
+      <Navbar />
 
       {init && (
       <Particles
@@ -107,17 +110,17 @@ const options = useMemo(
       particlesLoaded={particlesLoaded}
       />
     )}
-
-      <section className="snap-start relative z-10">
+    
+      <section id="home" className="snap-start relative z-10">
         <Home />
       </section>
-      <section className="snap-start relative z-10">
+      <section id="about" className="snap-start relative z-10">
         <About />
       </section>
-      <section className="snap-start relative z-10">
+      <section id="experience" className="snap-start relative z-10">
         <Experience />
       </section>
-      <section className="snap-start relative z-10">
+      <section id="projects" className="snap-start relative z-10">
         <Projects />
       </section>
     </div>

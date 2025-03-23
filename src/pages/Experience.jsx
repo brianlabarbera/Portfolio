@@ -25,7 +25,7 @@ const Experience = () => {
             <div className="w-full max-w-2xl">
             <h2 className="text-3xl font-bold mb-6">✨ MY EXPERIENCE</h2>
         {experiences.map((exp, index) => (
-          <div key={index} className={`mb-6 ${exp.faded ? "opacity-50" : ""}`}>
+          <div key={index} className="mb-6">
             <h3 className="text-lg">{exp.company}</h3>
             <h2 className="text-3xl font-extrabold">{exp.role}</h2>
             <p className="text-gray-400">{exp.duration}</p>
