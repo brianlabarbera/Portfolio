@@ -28,7 +28,7 @@ const options = useMemo(
   () => ({
     background: {
       color: {
-        value: "#00000000",
+        value: "#36454F",
       },
     },
     fpsLimit: 120,

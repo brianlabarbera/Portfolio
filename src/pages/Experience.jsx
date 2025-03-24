@@ -23,7 +23,7 @@ const Experience = () => {
         
         <div className="h-screen w-full flex items-center justify-center text-white">
             <div className="w-full max-w-2xl">
-            <h2 className="text-3xl font-bold mb-6">✨ MY EXPERIENCE</h2>
+            <h2 className="text-3xl font-bold mb-6">✨ My Experience</h2>
         {experiences.map((exp, index) => (
           <div key={index} className="mb-6">
             <h3 className="text-lg">{exp.company}</h3>

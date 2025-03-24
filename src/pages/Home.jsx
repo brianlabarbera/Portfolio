@@ -4,12 +4,16 @@ const Home = () => {
 
 return (
     <div className="h-screen w-full flex flex-col items-center justify-center text-white">
-      <h1 className="text-5xl font-bold">
-      <span className="text-purple-400">SOFTWARE</span> DEVELOPER
+      <h1 className="text-5xl font-extrabold">
+      <span className="text-purple-400">SOFTWARE</span>
       </h1>
-      <p className="mt-4 text-gray-300">
-      Hi! I'm <span className="font-bold">Brian</span>, a passionate software developer eager to create stunning web solutions.
+      <h2 className="text-5xl font-extrabold">
+      <span>DEVELOPER</span>
+      </h2>
+      <p className="mt-4">
+      Hi! I'm <span className="font-bold">Brian</span>. A creative Software Developer with 6+ months of professional experience in building high-performance and responsive applications.
       </p>
+      <p>I'm actively seeking opportunities to leverage my technical expertise while expanding my professional experience in the field.</p>
     </div>
  )
 }
