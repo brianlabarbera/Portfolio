@@ -5,8 +5,10 @@ const About = () => {
 
     return (
 
-    <div className="h-screen w-full flex items-center justify-center text-white">
-      <TechStack />
+      <div className="h-screen w-full flex items-center justify-center text-center text-white px-4">
+      <div className="max-w-6xl w-full">
+        <TechStack />
+      </div>
     </div>
  )
 }

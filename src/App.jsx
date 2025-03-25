@@ -7,6 +7,7 @@ import About from "./pages/About"
 import Experience from "./pages/Experience"
 import Projects from "./pages/Projects"
 import Navbar from "./components/Navbar"
+import ScrollBar from "./components/ScrollBar"
 
 const App = () => {
 
@@ -35,11 +36,11 @@ const options = useMemo(
     interactivity: {
       events: {
         onClick: {
-          enable: true,
+          enable: false,
           mode: "repulse",
         },
         onHover: {
-          enable: true,
+          enable: false,
           mode: 'grab',
         },
       },
@@ -60,7 +61,7 @@ const options = useMemo(
       links: {
         color: "#FFFFFF",
         distance: 150,
-        enable: true,
+        enable: false,
         opacity: 0.3,
         width: 1,
       },
@@ -98,7 +99,8 @@ const options = useMemo(
 
   return (
     
-    <div className="relative min-h-screen w-screen">
+    <div className="relative min-h-screen w-screen no-scrollbar">
+
       {init && (
         <Particles
           className="fixed top-0 left-0 w-full h-full pointer-events-none z-0"
@@ -107,6 +109,8 @@ const options = useMemo(
           particlesLoaded={particlesLoaded}
         />
       )}
+
+      <ScrollBar />
 
       <Navbar />
 

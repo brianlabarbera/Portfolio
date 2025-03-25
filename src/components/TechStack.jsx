@@ -16,65 +16,87 @@ import AmazonwebservicesOriginalWordmark from 'devicons-react/lib/icons/Amazonwe
 const TechStack = () => {
     return (
 
-        <div>
-          <h2 className="text-3xl font-bold mb-6">🚀 My Stack</h2>
-
-          <section className="mb-6">
-            <h3 className="text-xl font-bold text-white mb-3">FRONTEND</h3>
-            <div className="flex flex-wrap gap-5">
-              <JavascriptOriginal size={40} />
-              <p className="text-2xl">JavaScript</p>
-              <ReactOriginal size={40} />
-              <p className="text-2xl">React</p>
-              <TailwindcssOriginal size={40} />
-              <p className="text-2xl">Tailwind CSS</p>
-              </div>
-            </section>
-
-            <section className="mb-6">
-            <h3 className="text-xl font-bold text-white mb-3">BACKEND</h3>
-            <div className="flex flex-wrap gap-5">
-            <NodejsOriginal size={40} />
-            <p className="text-2xl">Node.js</p>
-            <ExpressOriginal size={40} />
-            <p className="text-2xl">Express.js</p>
-            </div>
-            </section>
-
-            <section className="mb-6">
-            <h3 className="text-xl font-bold text-white mb-3">MOBILE</h3>
-            <div className="flex flex-wrap gap-5">
-            <KotlinOriginal size={40} />
-            <p className="text-2xl">Kotlin</p>
-            <GradleOriginal size={40} />
-            <p className="text-2xl">Gradle</p>
-            <AndroidstudioOriginal size={40} />
-            <p className="text-2xl">Android Studio</p>
-            </div>
-            </section>
-
-            <section className="mb-6">
-            <h3 className="text-xl font-bold text-white mb-3">DATABASE</h3>
-            <div className="flex flex-wrap gap-5">
-            <MysqlOriginal size={40} />
-            <p className="text-2xl">MySQL</p>
-            <PostgresqlOriginal size={40} />
-            <p className="text-2xl">PostgreSQL</p>
-            </div>
-            </section>
-
-            <section className="mb-6">
-            <h3 className="text-xl font-bold text-white mb-3">TOOLS</h3>
-            <div className="flex flex-wrap gap-5">
-            <GitOriginal size={40} />
-            <p className="text-2xl">Git</p>
-            <AmazonwebservicesOriginalWordmark size={40} />
-            <p className="text-2xl">AWS</p>
-            </div>
-            </section>
-
-
+      <div className="max-w-4xl mx-auto px-4">
+      <h2 className="text-3xl font-bold mb-6 text-center">🚀 My Stack</h2>
+      
+      <section className="mb-6">
+        <h3 className="text-xl font-bold text-white mb-3 text-center">FRONTEND</h3>
+        <div className="flex flex-wrap justify-center items-center gap-5">
+          <div className="flex flex-col items-center">
+            <JavascriptOriginal size={40} />
+            <p className="text-lg mt-2">JavaScript</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <ReactOriginal size={40} />
+            <p className="text-lg mt-2">React</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <TailwindcssOriginal size={40} />
+            <p className="text-lg mt-2">Tailwind CSS</p>
+          </div>
         </div>
+      </section>
+    
+      <section className="mb-6">
+        <h3 className="text-xl font-bold text-white mb-3 text-center">BACKEND</h3>
+        <div className="flex flex-wrap justify-center items-center gap-5">
+          <div className="flex flex-col items-center">
+            <NodejsOriginal size={40} />
+            <p className="text-lg mt-2">Node.js</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <ExpressOriginal size={40} />
+            <p className="text-lg mt-2">Express.js</p>
+          </div>
+        </div>
+      </section>
+    
+      <section className="mb-6">
+        <h3 className="text-xl font-bold text-white mb-3 text-center">MOBILE</h3>
+        <div className="flex flex-wrap justify-center items-center gap-5">
+          <div className="flex flex-col items-center">
+            <KotlinOriginal size={40} />
+            <p className="text-lg mt-2">Kotlin</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <GradleOriginal size={40} />
+            <p className="text-lg mt-2">Gradle</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <AndroidstudioOriginal size={40} />
+            <p className="text-lg mt-2">Android Studio</p>
+          </div>
+        </div>
+      </section>
+    
+      <section className="mb-6">
+        <h3 className="text-xl font-bold text-white mb-3 text-center">DATABASE</h3>
+        <div className="flex flex-wrap justify-center items-center gap-5">
+          <div className="flex flex-col items-center">
+            <MysqlOriginal size={40} />
+            <p className="text-lg mt-2">MySQL</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <PostgresqlOriginal size={40} />
+            <p className="text-lg mt-2">PostgreSQL</p>
+          </div>
+        </div>
+      </section>
+    
+      <section className="mb-6">
+        <h3 className="text-xl font-bold text-white mb-3 text-center">TOOLS</h3>
+        <div className="flex flex-wrap justify-center items-center gap-5">
+          <div className="flex flex-col items-center">
+            <GitOriginal size={40} />
+            <p className="text-lg mt-2">Git</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <AmazonwebservicesOriginalWordmark size={40} />
+            <p className="text-lg mt-2">AWS</p>
+          </div>
+        </div>
+      </section>
+    </div>
      )
 }
 

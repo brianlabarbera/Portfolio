@@ -19,22 +19,25 @@ const experiences = [
 ]
 
 const Experience = () => {
-    return (
-        
-        <div className="h-screen w-full flex items-center justify-center text-white">
-            <div className="w-full max-w-2xl">
-            <h2 className="text-3xl font-bold mb-6">✨ My Experience</h2>
-        {experiences.map((exp, index) => (
-          <div key={index} className="mb-6">
-            <h3 className="text-lg">{exp.company}</h3>
-            <h2 className="text-3xl font-extrabold">{exp.role}</h2>
-            <p className="text-gray-400">{exp.duration}</p>
-          </div>
-        ))}
-      </div>
+  return (
+    <div className="h-screen w-full flex items-center justify-center text-white px-4">
+      <div className="w-full max-w-3xl">
+        <h2 className="text-3xl font-bold mb-8 text-center">✨ My Experience</h2>
+        <div className="space-y-6">
+          {experiences.map((exp, index) => (
+            <div 
+              key={index} 
+              className="p-6 text-center"
+            >
+              <h3 className="text-lg text-gray-300 mb-2">{exp.company}</h3>
+              <h2 className="text-2xl md:text-3xl font-extrabold mb-2">{exp.role}</h2>
+              <p className="text-gray-400">{exp.duration}</p>
+            </div>
+          ))}
         </div>
-        
- )
+      </div>
+    </div>
+  )
 }
 
 export default Experience
