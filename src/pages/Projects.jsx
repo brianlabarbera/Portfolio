@@ -7,7 +7,7 @@ const Projects = () => {
       title: "FiveGuys",
       description: "Full-Stack imitation Five Guys website that enables users to browse, add to cart, and purchase items. Includes a PostgreSQL database to efficiently manage users, products, and transactions.",
       technologies: ["React", "Express.js", "PostgreSQL"],
-      screenshots: ["/api/placeholder/800/450"],
+      screenshots: [""],
       githubUrl: "https://github.com/brianlabarbera/E-CommerceSite"
     },
     {
@@ -15,7 +15,7 @@ const Projects = () => {
       title: "DigitalGameDeals",
       description: "Android app that allows users to track digital video game prices from multiple online storefronts. Integrated a REST API to display 10,000+ games, updating prices in real time.",
       technologies: ["Kotlin", "Gradle", "Android Studio"],
-      screenshots: ["/api/placeholder/800/450"],
+      screenshots: [""],
       githubUrl: "https://github.com/brianlabarbera/digitalGameDeals"
     },
 

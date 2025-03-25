@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const [setScrollPosition] = useState(0);
   const [setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(() => {
@@ -43,9 +43,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrollPosition > 50 ? 'bg-black/80 backdrop-blur-sm' : 'bg-transparent'}`}>
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-white font-bold text-xl">labarberabrian00@gmail.com</div>
+    <nav className={`fixed w-full z-50 transition-all duration-300`}>
+      <div className="container mx-auto px-4 py-4 flex justify-end items-center">
         
         <div className="hidden">
           {navLinks.map((link) => (

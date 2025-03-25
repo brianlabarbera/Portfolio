@@ -1,1 +1,6 @@
 @import 'tailwindcss';
+
+Copybody, html {
+    overflow-x: hidden;
+    max-width: 100%;
+  }

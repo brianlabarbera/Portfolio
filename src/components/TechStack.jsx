@@ -22,12 +22,12 @@ const TechStack = () => {
           <section className="mb-6">
             <h3 className="text-xl font-bold text-white mb-3">FRONTEND</h3>
             <div className="flex flex-wrap gap-5">
-               <JavascriptOriginal size={40} />
-               <p className="text-2xl">JavaScript</p>
+              <JavascriptOriginal size={40} />
+              <p className="text-2xl">JavaScript</p>
               <ReactOriginal size={40} />
               <p className="text-2xl">React</p>
               <TailwindcssOriginal size={40} />
-               <p className="text-2xl">Tailwind CSS</p>
+              <p className="text-2xl">Tailwind CSS</p>
               </div>
             </section>
 

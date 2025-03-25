@@ -98,31 +98,36 @@ const options = useMemo(
 
   return (
     
-    <div className="h-screen w-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory relative">
+    <div className="relative min-h-screen w-screen">
+      {init && (
+        <Particles
+          className="fixed top-0 left-0 w-full h-full pointer-events-none z-0"
+          id="tsparticles"
+          options={options}
+          particlesLoaded={particlesLoaded}
+        />
+      )}
 
       <Navbar />
 
-      {init && (
-      <Particles
-      className="fixed top-0 left-0 w-full h-full pointer-events-none z-0"
-      id="tsparticles"
-      options={options}
-      particlesLoaded={particlesLoaded}
-      />
-    )}
-    
-      <section id="home" className="snap-start relative z-10">
-        <Home />
-      </section>
-      <section id="about" className="snap-start relative z-10">
-        <About />
-      </section>
-      <section id="experience" className="snap-start relative z-10">
-        <Experience />
-      </section>
-      <section id="projects" className="snap-start relative z-10">
-        <Projects />
-      </section>
+      <div className="relative z-10">
+        <section id="home" className="min-h-screen">
+          <Home />
+        </section>
+        <section id="about" className="min-h-screen">
+          <About />
+        </section>
+        <section id="experience" className="min-h-screen">
+          <Experience />
+        </section>
+        <section id="projects" className="min-h-screen">
+          <Projects />
+        </section>
+      </div>
+
+      <footer className="absolute bottom-0 left-0 w-full bg-#36454F text-white text-center font-bold py-4 z-20">
+        © 2025 Brian LaBarbera
+      </footer>
     </div>
   )
 }
