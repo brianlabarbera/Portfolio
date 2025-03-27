@@ -59,7 +59,7 @@ const Navbar = () => {
             <button
               key={link.id}
               onClick={() => scrollToSection(link.id)}
-              className="text-white text-2xl hover:text-blue-400 transition-colors"
+              className="text-white text-2xl hover:text-purple-400 transition-colors"
             >
               {link.label}
             </button>

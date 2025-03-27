@@ -99,7 +99,7 @@ const options = useMemo(
 
   return (
     
-    <div className="relative min-h-screen w-screen no-scrollbar">
+    <div className="relative min-h-screen w-screen">
 
       {init && (
         <Particles

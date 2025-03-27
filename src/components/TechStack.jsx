@@ -17,7 +17,7 @@ const TechStack = () => {
     return (
 
       <div className="max-w-4xl mx-auto px-4">
-      <h2 className="text-3xl font-bold mb-6 text-center">🚀 My Stack</h2>
+      <h2 className="text-3xl font-bold mb-6 text-center">⚙️ My Stack</h2>
       
       <section className="mb-6">
         <h3 className="text-xl font-bold text-white mb-3 text-center">FRONTEND</h3>
