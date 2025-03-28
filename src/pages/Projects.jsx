@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import digitalgameDeals from '/src/assets/images/digitalgameDeals.png';
 
 const Projects = () => {
   const projectsData = [
@@ -15,7 +16,7 @@ const Projects = () => {
       title: "DigitalGameDeals",
       description: "Android app that allows users to track digital video game prices from multiple online storefronts. Integrated a REST API to display 10,000+ games, updating prices in real time.",
       technologies: ["Kotlin", "Gradle", "Android Studio"],
-      screenshots: [""],
+      screenshots: [digitalgameDeals],
       githubUrl: "https://github.com/brianlabarbera/digitalGameDeals"
     },
 
@@ -95,7 +96,7 @@ const Projects = () => {
                   <img 
                     src={selectedProject.screenshots[0]} 
                     alt={`${selectedProject.title} screenshot`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
 
