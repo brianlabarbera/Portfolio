@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import FiveGuys from '/src/assets/images/FiveGuys.png';
 import digitalgameDeals from '/src/assets/images/digitalgameDeals.png';
 
 const Projects = () => {
@@ -8,7 +9,7 @@ const Projects = () => {
       title: "FiveGuys",
       description: "Full-Stack imitation Five Guys website that enables users to browse, add to cart, and purchase items. Includes a PostgreSQL database to efficiently manage users, products, and transactions.",
       technologies: ["React", "Express.js", "PostgreSQL"],
-      screenshots: [""],
+      screenshots: [FiveGuys],
       githubUrl: "https://github.com/brianlabarbera/E-CommerceSite"
     },
     {
