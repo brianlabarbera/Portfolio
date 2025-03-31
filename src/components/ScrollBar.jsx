@@ -21,7 +21,7 @@ const ScrollBar = () => {
   
     return (
       <div 
-        className="fixed top-1/2 right-8 -translate-y-1/2 z-[100] w-1 h-3/4 bg-gray-300/20"
+        className="hidden md:block fixed top-1/2 right-8 -translate-y-1/2 z-[100] w-1 h-3/4 bg-gray-300/20"
         style={{ zIndex: 100 }}
       >
         <div 
