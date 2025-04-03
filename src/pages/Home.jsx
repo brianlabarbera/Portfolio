@@ -25,8 +25,13 @@ const Home = () => {
         </Fade>
         
         <Fade delay={1.2}>
-          <p className="text-base md:text-lg max-w-xl mx-auto">
+          <p className="text-base md:text-lg mb-4 max-w-xl mx-auto">
             I'm actively seeking opportunities to leverage my technical expertise while expanding my professional experience in the field.
+          </p>
+        </Fade>
+        <Fade delay={1.5}>
+          <p className="text-base md:text-lgmax-w-xl font-bold mx-auto">
+            labarberabrian00@gmail.com
           </p>
         </Fade>
       </div>
